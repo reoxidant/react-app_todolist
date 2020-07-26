@@ -27,16 +27,51 @@ ReactDOM.render(
             </header>
             <div className="content-app">
                 <div className="sidebar-todo">
-                    <input type="radio" id="todo1" name="todo" value="td"/>
-                    <label htmlFor="todo1">Today</label>
+                    <div className="nav-todo-menu">
+                        <input type="radio" id="todo1" name="todo" value="td"/>
+                        <label htmlFor="todo1">Today</label>
 
-                    <input type="radio" id="todo2" name="todo" value="cmp"/>
-                    <label htmlFor="todo2">Complete</label>
+                        <input type="radio" id="todo2" name="todo" value="cmp"/>
+                        <label htmlFor="todo2">Complete</label>
 
-                    <input type="radio" id="todo3" name="todo" value="ntd"/>
-                    <label htmlFor="todo3">Need to do</label>
+                        <input type="radio" id="todo3" name="todo" value="ntd"/>
+                        <label htmlFor="todo3">Need to do</label>
+                    </div>
+                    <div className="sidebar-todo-projects">
+                        <div className="header-todo-projects">
+                            <h3>Projects</h3>
+                            <button id="add-button">
+                                <i className="fa fa-plus" aria-hidden="true"></i>
+                            </button>
+
+                        </div>
+                        <hr/>
+                        <div className="nav-projects-menu">
+                            <div className="project-item">
+                                <div className="nav-project-header">
+                                    <div className="nav-icon">
+                                        <i className="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                    <div className="nav-name">
+                                        <span>Work</span>
+                                    </div>
+                                </div>
+                                <div className="nav-project-items">
+                                    <ul>
+                                        <li>New Brand</li>
+                                        <li>Web update</li>
+                                        <li>Product Road Map</li>
+                                        <li>Meeting Agenda</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                {<div className="nav-wrapper">
+                <div className="nav-wrapper">
+                    <div className="nav-header">
+                        <h2>Today</h2>
+                    </div>
                     <div className="nav-item-1 nav-item">
                         <input type="checkbox" id="task-1" name="task-1" value="ok"/>
                         <label htmlFor="task-1">Task 1</label>
@@ -57,7 +92,7 @@ ReactDOM.render(
                         <input type="checkbox" id="task-5" name="task-5" value="ok"/>
                         <label htmlFor="task-5">Task 5</label>
                     </div>
-                </div>}
+                </div>
             </div>
         </div>
     )

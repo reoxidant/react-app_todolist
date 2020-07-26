@@ -73,17 +73,17 @@ header {
     flex-wrap: wrap;
 }
 
-.sidebar-todo input[type=radio] {
+.nav-todo-menu input[type=radio] {
     display: none;
 }
 
-.sidebar-todo input[type=radio] + label {
+.nav-todo-menu input[type=radio] + label {
     color: #fff;
     font-weight: normal;
     padding: 10px 20px;
 }
 
-.sidebar-todo input[type=radio]:checked + label {
+.nav-todo-menu input[type=radio]:checked + label {
     color: #61dafb;
     font-weight: bolder;
 }
@@ -94,12 +94,19 @@ header {
     min-height: 100% !important;
 }
 
+.nav-todo-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+}
+
 .sidebar-todo {
     display: flex;
     flex-direction: column;
-    background-color: rgb(40,44,52);
     flex: 2;
+    background-color: rgb(40, 44, 52);
 }
+
 
 /*Sidebar End*/
 
@@ -110,46 +117,191 @@ header {
     flex-direction: column;
     flex: 4;
     margin-left: 25px;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
-.nav-item{
+.nav-wrapper .nav-item {
     padding: 10px;
+    margin-left: 20px;
 }
 
 /*End-Content*/
 
 /* Checkbox item */
 
-.nav-wrapper input[type=checkbox]{
+.nav-wrapper input[type=checkbox] {
     display: none;
 }
 
-.nav-wrapper input[type=checkbox] + label:before{
+.nav-wrapper input[type=checkbox] + label:before {
     content: "";
     width: 16px;
     height: 16px;
     position: absolute;
     left: -5px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     outline: none;
     border-radius: 50%;
     border: 2px solid grey;
 }
 
-.nav-wrapper input[type=checkbox]:checked + label:before{
+.nav-wrapper input[type=checkbox]:checked + label:before {
     background-color: #61dafb;
-    box-shadow: 0px 0px 0px 2px #fff inset;
+    box-shadow: 0 0 0 2px #fff inset;
 
 }
 
-input[type="checkbox"]:not(:checked) + label:before{
+input[type="checkbox"]:not(:checked) + label:before {
     background-color: #fff;
 }
 
 
-.nav-wrapper .nav-item{
+.nav-wrapper .nav-item {
     position: relative;
 }
+
 /* Checkbox item end*/
+
+/*Project items*/
+
+.nav-projects-menu {
+    margin: 20px 5px;
+}
+
+.nav-project-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 120px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-project-header .nav-name {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-project-header .nav-name:before {
+    content: "";
+    display: block;
+    background-color: #61dafb;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+}
+
+.project-item .fa-angle-down {
+    transform: rotate(-90deg);
+}
+
+.project-item .show .fa-angle-down {
+    transition: all linear 0.2s;
+    transform: rotate(0deg);
+
+}
+
+.project-item .nav-project-items ul > li {
+    display: none;
+}
+
+
+.project-item .show .scale-up-ver-top ul > li {
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    padding: 5px 0;
+
+}
+
+.project-item .show .scale-up-ver-top ul > li:before {
+    transition: all linear 3s;
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 50%;
+    background-color: aqua;
+    left: -20px;
+}
+
+.scale-up-ver-top {
+    -webkit-animation: scale-up-ver-top 0.5s ease-in both;
+    animation: scale-up-ver-top 0.5s ease-in both;
+}
+
+@-webkit-keyframes scale-up-ver-top {
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+        -webkit-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+    }
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+    }
+}
+
+@keyframes scale-up-ver-top {
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+        -webkit-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+    }
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+    }
+}
+
+/*Project end items*/
+
+.header-todo-projects {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+    justify-content: space-between;
+
+}
+
+.sidebar-todo-projects .header-todo-projects #add-button {
+    background-color: transparent;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 0;
+    margin-right: 50px;
+}
+
+.sidebar-todo-projects hr {
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.sidebar-todo-projects .header-todo-projects #add-button i {
+    font-size: 20px;
+}
