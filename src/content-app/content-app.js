@@ -1,7 +1,7 @@
 import React from "react";
+import './content-app.css';
 import Sidebar from './../sidebar/sidebar';
 import ContentTodoList from "./../content-todo-list/content-todo-list";
-import './content-app.css';
 
 const ContentApp = () => {
     return (

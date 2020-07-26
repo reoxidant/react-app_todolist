@@ -1,5 +1,12 @@
 /*Header*/
 
+header {
+    display: flex;
+    align-items: center;
+    background-color: #20232a;
+    justify-content: space-between;
+}
+
 .logo img {
     width: 30px;
 }
@@ -18,34 +25,27 @@
     color: #61dafb;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    background-color: #20232a;
-    justify-content: space-between;
-}
-
-.actions-bar {
+.search-actions-bar {
     display: flex;
     padding-right: 20px;
 }
 
-.field-search {
+.search-actions-bar .field-search {
     position: relative;
 }
 
-#search {
+.search-actions-bar #input-search {
     height: 20px;
     padding-left: 20px;
 }
 
-.input-icon {
+.search-actions-bar .input-icon {
     position: absolute;
     left: 5px;
     top: calc(50% - 0.6em);
 }
 
-#add-button {
+.search-actions-bar #add-new-item-btn {
     margin-left: 2px;
     width: 26px;
     height: 26px;

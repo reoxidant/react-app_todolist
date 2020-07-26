@@ -3,25 +3,25 @@ import './sidebar-project-bar.css';
 
 const SidebarProjectBar = () => {
     return (
-        <div className="sidebar-todo-projects">
-            <div className="header-todo-projects">
+        <div className="sidebar__projects-bar">
+            <div className="projects-bar__header">
                 <h3>Projects</h3>
-                <button id="add-button">
+                <button id="projects-bar__add-new-item-button">
                     <i className="fa fa-plus" aria-hidden="true"/>
                 </button>
             </div>
             <hr/>
-            <div className="nav-projects-menu">
-                <div className="project-item">
-                    <div className="nav-project-header">
-                        <div className="nav-icon">
+            <div className="project-bar__content">
+                <div className="project-bar__item">
+                    <div className="item__header show">
+                        <div className="item__header-icon">
                             <i className="fa fa-angle-down" aria-hidden="true"/>
                         </div>
-                        <div className="nav-name">
+                        <div className="item__header-name">
                             <span>Work</span>
                         </div>
                     </div>
-                    <div className="nav-project-items">
+                    <div className="item-tasks__list">
                         <ul>
                             <li>New Brand</li>
                             <li>Web update</li>

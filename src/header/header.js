@@ -9,13 +9,13 @@ const Header = () => {
                 <img src={logo} alt="logotype"/>
                 <span>Todolist</span>
             </div>
-            <div className="actions-bar">
+            <div className="search-actions-bar">
                 <div className="field-search">
-                    <input id="search" type="text"/>
-                    <label htmlFor="search" className="fa fa-search input-icon"></label>
+                    <input id="input-search" type="text"/>
+                    <label htmlFor="input-search" className="fa fa-search input-icon"/>
                 </div>
-                <button id="add-button">
-                    <i className="fa fa-plus" aria-hidden="true"></i>
+                <button id="add-new-item-btn">
+                    <i className="fa fa-plus" aria-hidden="true"/>
                 </button>
             </div>
         </header>

@@ -3,7 +3,7 @@ import './sidebar-nav-menu.css';
 
 const SidebarNavMenu = () => {
     return (
-        <div className="nav-todo-menu">
+        <div className="sidebar-nav-menu">
             <input type="radio" id="todo1" name="todo" value="td"/>
             <label htmlFor="todo1">Today</label>
 
