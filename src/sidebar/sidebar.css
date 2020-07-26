@@ -1,0 +1,35 @@
+/*Sidebar Content Menu*/
+
+.nav-todo-menu input[type=radio] {
+    display: none;
+}
+
+.nav-todo-menu input[type=radio] + label {
+    color: #fff;
+    font-weight: normal;
+    padding: 10px 20px;
+}
+
+.nav-todo-menu input[type=radio]:checked + label {
+    color: #61dafb;
+    font-weight: bolder;
+}
+
+.content-app {
+    position: absolute;
+    min-width: 100% !important;
+    min-height: 100% !important;
+}
+
+.nav-todo-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+}
+
+.sidebar-todo {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    background-color: rgb(40, 44, 52);
+}
