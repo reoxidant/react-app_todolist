@@ -8,7 +8,7 @@ const TodoList = ({tasks, statusIndex}) => {
         return item.status === statusIndex;
     })
         .map((item, index) => {
-            return <TodoListItem taskItem={item} index={index}/>;
+            return <TodoListItem {... item} index={index}/>;
         });
 
     return (

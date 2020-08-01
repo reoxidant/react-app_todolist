@@ -6,8 +6,7 @@ const Content = ({todoList, statusList}) => {
 
     const statusPage = statusList.find(item => item.select);
 
-    const statusPageIndex = statusList.findIndex(
-        item => item.select);
+    const statusPageIndex = statusList.findIndex(item => item.select);
 
     const projects = todoList.map((project) => {
         return <TodoList tasks={project.tasks} statusIndex={statusPageIndex}/>
