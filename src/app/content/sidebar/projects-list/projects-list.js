@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectListItem from "./project-list-item/project-list-item";
 import './projects-list.css';
 
 const SidebarProjectBar = ({showListProjects}) => {
@@ -26,10 +27,7 @@ const SidebarProjectBar = ({showListProjects}) => {
                     </div>
                     <div className="item-tasks__list">
                         <ul>
-                            <li>New Brand</li>
-                            <li>Web update</li>
-                            <li>Product Road Map</li>
-                            <li>Meeting Agenda</li>
+                            <ProjectListItem/>
                         </ul>
                     </div>
                 </div>
