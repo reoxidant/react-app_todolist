@@ -1,7 +1,10 @@
 import React from "react";
 import './sidebar-project-bar.css';
 
-const SidebarProjectBar = () => {
+const SidebarProjectBar = ({showListProjects}) => {
+
+    const showProjectsList = (showListProjects) ? "project-bar__item show" : "project-bar__item";
+
     return (
         <div className="sidebar__projects-bar">
             <div className="projects-bar__header">
@@ -12,8 +15,8 @@ const SidebarProjectBar = () => {
             </div>
             <hr/>
             <div className="project-bar__content">
-                <div className="project-bar__item">
-                    <div className="item__header show">
+                <div className={showProjectsList}>
+                    <div className="item__header">
                         <div className="item__header-icon">
                             <i className="fa fa-angle-down" aria-hidden="true"/>
                         </div>
@@ -21,7 +24,7 @@ const SidebarProjectBar = () => {
                             <span>Work</span>
                         </div>
                     </div>
-                    <div className="item-tasks__list">
+                    <div className="item-tasks__list scale-up-ver-top">
                         <ul>
                             <li>New Brand</li>
                             <li>Web update</li>

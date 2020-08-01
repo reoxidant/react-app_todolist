@@ -44,20 +44,7 @@ hr {
     margin: 20px 5px;
 }
 
-.project-bar__item .item-tasks__list ul > li {
-    display: none;
-}
-
-.project-bar__item .fa-angle-down {
-    transform: rotate(-90deg);
-}
-
-.project-bar__item .show .fa-angle-down {
-    transition: all linear 0.2s;
-    transform: rotate(0deg);
-}
-
-.project-bar__item .show .scale-up-ver-top ul > li {
+.project-bar__content .show .scale-up-ver-top ul > li {
     color: #ffffff;
     text-decoration: none;
     list-style: none;
@@ -65,7 +52,19 @@ hr {
     display: flex !important;
     align-items: center;
     padding: 5px 0;
+}
 
+.project-bar__content .show .fa-angle-down {
+    transition: all linear 0.2s;
+    transform: rotate(0deg);
+}
+
+.project-bar__item .item-tasks__list ul > li {
+    display: none;
+}
+
+.project-bar__item .fa-angle-down {
+    transform: rotate(-90deg);
 }
 
 .project-bar__item .show .scale-up-ver-top ul > li:before {
