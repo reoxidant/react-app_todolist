@@ -1,0 +1,39 @@
+.nav-items-content {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.nav-items .nav-item {
+    padding: 10px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.nav-items input[type=checkbox] {
+    display: none;
+}
+
+.nav-items input[type=checkbox] + label:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -5px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    outline: none;
+    border-radius: 50%;
+    border: 2px solid grey;
+}
+
+.nav-items input[type=checkbox]:checked + label:before {
+    background-color: #61dafb;
+    box-shadow: 0 0 0 2px #fff inset;
+}
+
+.nav-items input[type="checkbox"]:not(:checked) + label:before {
+    background-color: #fff;
+}
