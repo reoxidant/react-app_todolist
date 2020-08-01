@@ -3,7 +3,7 @@ import './sidebar.css';
 import SidebarNavMenu from "./../sidebar-nav-menu/sidebar-nav-menu";
 import SidebarProjectBar from "./../sidebar-project-bar/sidebar-projects-bar";
 
-const Sidebar = () => {
+const SidebarApp = () => {
     return (
         <div class="sidebar">
             <SidebarNavMenu/>
@@ -12,4 +12,4 @@ const Sidebar = () => {
     )
 }
 
-export default Sidebar;
+export default SidebarApp;

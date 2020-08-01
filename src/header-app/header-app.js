@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "./logo.png";
-import './header.css';
+import './header-app.css';
 
-const Header = () => {
+const HeaderApp = () => {
     return (
         <header>
             <div className="logo">
@@ -22,4 +22,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default HeaderApp;
