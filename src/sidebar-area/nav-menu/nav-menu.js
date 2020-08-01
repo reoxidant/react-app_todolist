@@ -1,7 +1,7 @@
 import React from "react";
-import './sidebar-nav-menu.css';
+import './nav-menu.css';
 
-const SidebarNavMenu = () => {
+const NavMenu = () => {
     return (
         <div className="sidebar-nav-menu">
             <input type="radio" id="todo1" name="todo" value="td"/>
@@ -16,4 +16,4 @@ const SidebarNavMenu = () => {
     )
 }
 
-export default SidebarNavMenu;
+export default NavMenu;

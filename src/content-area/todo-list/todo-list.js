@@ -1,7 +1,7 @@
 import React from "react";
-import './contend-todo-list.css';
+import './todo-list.css';
 
-const ContentTodoList = () => {
+const TodoList = () => {
     return (
         <div className="nav-items-content">
             <div className="nav-header">
@@ -17,4 +17,4 @@ const ContentTodoList = () => {
     )
 }
 
-export default ContentTodoList;
+export default TodoList;

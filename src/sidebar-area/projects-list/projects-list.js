@@ -1,5 +1,5 @@
 import React from "react";
-import './sidebar-project-bar.css';
+import './projects-list.css';
 
 const SidebarProjectBar = ({showListProjects}) => {
 
@@ -24,7 +24,7 @@ const SidebarProjectBar = ({showListProjects}) => {
                             <span>Work</span>
                         </div>
                     </div>
-                    <div className="item-tasks__list scale-up-ver-top">
+                    <div className="item-tasks__list">
                         <ul>
                             <li>New Brand</li>
                             <li>Web update</li>

@@ -1,13 +1,13 @@
 import React from 'react';
 import './app.css';
-import HeaderApp from "../header-app/header-app";
-import ContentApp from "../content-app/content-app";
+import Header from "../header-area/header/header";
+import Content from "../content-area/content/content";
 
 const App = () => {
     return(
         <div>
-            <HeaderApp/>
-            <ContentApp/>
+            <Header/>
+            <Content/>
         </div>
     );
 }
