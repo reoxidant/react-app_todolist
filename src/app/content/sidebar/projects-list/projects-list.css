@@ -1,0 +1,107 @@
+.projects-bar__header {
+    display: flex;
+}
+
+.projects-bar__header h3 {
+    color: #fff;
+}
+
+.projects-bar__header {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+
+.projects-bar__header #projects-bar__add-new-item-button {
+    background-color: transparent;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 0;
+    margin-right: 50px;
+}
+
+.projects-bar__header #projects-bar__add-new-item-button i {
+    font-size: 20px;
+}
+
+hr {
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.project-bar__content {
+    margin: 20px 5px;
+}
+
+.project-bar__content .show ul > li {
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.project-bar__content .show .fa-angle-down {
+    transition: all linear 0.2s;
+    transform: rotate(0deg);
+}
+
+.project-bar__item .item-tasks__list ul > li {
+    display: none;
+}
+
+.project-bar__item .fa-angle-down {
+    transform: rotate(-90deg);
+}
+
+.project-bar__item .show ul > li:before {
+    transition: all linear 3s;
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 50%;
+    background-color: aqua;
+    left: -20px;
+}
+
+.item__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 120px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.item__header .item__header-name {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.item__header .item__header-name:before {
+    content: "";
+    display: block;
+    background-color: #61dafb;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+}
