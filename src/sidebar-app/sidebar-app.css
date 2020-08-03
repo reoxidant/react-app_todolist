@@ -1,0 +1,6 @@
+.sidebar {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 2 !important;
+    background-color: rgb(40, 44, 52) !important;
+}
